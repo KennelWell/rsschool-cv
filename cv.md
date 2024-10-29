@@ -43,8 +43,16 @@ console.log(result);
     * Youtube courses
     * [Степик курс по языку C и курс по JavaScript](https://stepik.org)
 * Freelance 
-
 ---
+
+## Languages ##
+---
+
+* Russian (native)
+* English (A2)
+
+--    
+
 #### Projects ####
 
 Soon...
