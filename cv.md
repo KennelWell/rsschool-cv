@@ -10,15 +10,18 @@
 
 ## about me ##
 
+I'm 34 years old and have been learning C at School 21 for the past six months, as well as focusing on front-end development. Last month, I created a dashboard for a startup project as a volunteer.
+
+My goal now is to receive an offer for a junior front-end position at an interesting company.
 
 ---
 
 ## Skills ##
 
 * HTML
-* CSS
+* CSS (TailWind, SASS)
 * JavaScript (Basic)
-* git
+* Git
 * C (Basic)
   
 ## Code Example ##
@@ -39,4 +42,10 @@ console.log(result);
 * #### courses ####
     * Youtube courses
     * [Степик курс по языку C и курс по JavaScript](https://stepik.org)
+* Freelance 
+
+---
+#### Projects ####
+
+Soon...
     
