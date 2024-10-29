@@ -2,9 +2,9 @@
 ---
 ## contacts ##
 
-* Unbuffed (telegram)
-* iurovserg@gmail.com
-* echpochmaque (Discord)
+* __Telegram:__ Unbuffed
+* __EMAIL__: iurovserg@gmail.com
+* __DISCORD__: echpochmaque (Discord)
   
 ---
 
