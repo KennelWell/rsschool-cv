@@ -1,0 +1,85 @@
+body {
+    background-color: #282c33;
+    color: white;
+    font-family: "Source Code Pro", serif;
+}
+
+.container {
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+.centered{
+    justify-content: space-between;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+.name {
+    margin: 0;
+    font-size: 3em;
+}
+
+.contacts {
+    gap: 30px
+}
+
+.job {
+    margin: 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.container {
+    
+}
+
+.head_content  {
+    border: 2px solid #88fa97;
+    padding: 20px;
+}
+
+.main_content {
+    justify-content: space-between;
+    border: solid 2px #88fa97;
+    padding: 0 20px;
+    height: 400px;
+}
+
+.left_side {
+    width: 100%;
+}
+
+.right_side {
+    flex-basis: 30%;
+    border-left: solid 2px #88fa97;
+    padding: 0 20px;
+}
+
+.content_title {
+    font-size: 2.3em;
+    font-weight: 200;
+    display: block;
+    width: max-content;
+    margin-bottom: 0;
+}
+
+.content_title::after {
+    content: '';
+    background-color: #88fa97;
+    height: 2px;
+    display: block;
+}
+
+.skills_list {
+    list-style: none;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
