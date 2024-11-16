@@ -1,0 +1,285 @@
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    background: #FF4646;
+    background-image: url('public/images/bg-snow.png');
+    border-radius: 20px;
+}
+
+section {
+    width: 1440px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 68px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url('public/images/bg-ball.png') no-repeat center;
+    background-size: contain;
+    background-position: top;
+    height: 668px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 433px;
+    height: 404px;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    font-family: 'Allura', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.btn {
+    padding: 20px 32px;
+    background: #181c29;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+.cta {
+    background: url('public/images/bg-forest.png') repeat-x center;
+    background-size: cover;
+    background-position: bottom;
+    height: 668px;
+}
+
+
+.about {
+    height: 628px;
+
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1440px;
+    align-items: center;
+    background: white;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.about__text {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 428px;
+}
+
+.about__text_content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181c29;
+}
+
+.about__img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.about__subtitle {
+    font-family: 'Allura', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: red;
+}
+
+.about__title {
+
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    line-height: 36.5px;
+    color: #181c29;
+    text-transform: uppercase;
+}
+
+
+.slider {
+    height: 488px;
+    color: white;
+    text-align: center;
+    width: 1276px;
+    overflow: hidden;
+}
+.slider__subtitle {
+    font-family: 'Allura', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.slider__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 36.5px;
+    letter-spacing: 9px;
+}
+
+.slider__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1440px;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.slider__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider__item_text {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 80px;
+}
+
+.slider__item  img{
+    height: 200px;
+    border-radius: 20px;
+}
+
+.slider__controls {
+    float: right;
+    margin: 30px 0;
+}
+
+.slider__controls button {
+    background: transparent;
+    border-radius: 20px;
+    height: 56px;
+    width: 56px;
+    border: 1px solid white;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slider__controls button:hover {
+    background: white;
+    color: black;
+}
+
+.best_gifts {
+    text-align: center;
+    color: white;
+    height: 554px;
+}
+
+
+
+.best_gifts__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 36.5px;
+    letter-spacing: 9px;
+}
+
+.best_gifts__subtitle {
+    font-family: 'Allura', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.best_gifts__cards {
+    display: flex;
+    gap: 5px;
+    width: 1276px;
+    margin: 0 auto;
+}
+
+.best_gifts__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.best_gifts__card img {
+    height: 230px;
+    background-color: #ECF3F8;
+    margin: 0;
+}
+
+.best_gifts__card_info {
+    text-align: left;
+    font-size: 12px;
+    width: 260px;
+    text-transform: uppercase;
+}
+
+
+.best_gifts__card_text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181c29;
+}
+
+/* color tag*/
+
+.work {
+    color: #4361FF;
+}
+
+.health {
+    color: #FF4646;
+}
+
+.harmony {
+    color: #FFB800;
+}
+
+
+
+
+
+
+
