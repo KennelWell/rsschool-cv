@@ -1,116 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Left side logo -->
-         <div class="logo">
-            <img src="img/logo.png" alt="logo">
-            <p>The gifts</p>
-         </div>
-        <!-- Right side menu  -->
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Gifts</a></li>
-                <li>About</li>
-                <li>Best</li>
-                <li>Contacts</li>
-            </ul>
-        </nav>
+      <!-- Left side logo -->
+      <div class="logo">
+        <img src="public/images/snowflake.svg" alt="logo" />
+        <p>The gifts</p>
+      </div>
+      <!-- Right side menu  -->
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item"><a href="#">Gifts</a></li>
+          <li class="menu__item"><a href="#">About</a></li>
+          <li class="menu__item"><a href="#">Best</a></li>
+          <li class="menu__item"><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-                <p class="subtitle">Merry Christmas</p>
-                <h1 class="title">GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h1>
-                <button class="btn">Explore magical gifts</button>
-                <p class="subtitle">and happy new year</p>
+      <section class="hero">
+        <div class="container">
+          <p class="subtitle">Merry Christmas</p>
+          <h1 class="title">GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h1>
+          <button class="btn">Explore magical gifts</button>
+          <p class="subtitle">and happy new year</p>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__subtitle">About</p>
+            <h2 class="about__title">Unleash your inner superhero!</h2>
+            <p class="about__text_content">
+              This New Year marks the beginning of your journey to inner harmony
+              and new strengths. We offer unique gifts that will help you
+              improve your life.
+            </p>
+          </div>
+          <div class="about__img">
+            <img class="about__img" src="/public/images/santa.png" />
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__text_content">
+          <p class="slider__subtitle">Become Happier!</p>
+          <h2 class="slider__title">IN THE NEW 2025</h2>
+        </div>
+        <div class="slider__content">
+          <div class="slider__item">
+            <p class="slider__item_text">LIVE</p>
+            <img src="/public/images/snowman.png" alt="gift1" />
+          </div>
+          <div class="slider__item">
+            <p class="slider__item_text">CREATE</p>
+            <img src="/public/images/christmas-trees.png" alt="gift2" />
+          </div>
+          <div class="slider__item">
+            <p class="slider__item_text">LOVE</p>
+            <img src="/public/images/christmas-tree-ball.png" alt="gift3" />
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__controls_prev">←</button>
+          <button class="slider__controls_next">→</button>
+        </div>
+      </section>
+      <section class="best_gifts">
+        <div class="best_gifts__content">
+          <p class="best_gifts__subtitle">Best Gifts</p>
+          <h2 class="best_gifts__title">ESPECIALITY FOR YOU</h2>
+        </div>
+        <div class="best_gifts__cards">
+          <div class="best_gifts__card">
+            <img src="/public/images/gift-for-work.png" alt="gift1" />
+            <div class="best_gifts__card_info">
+              <p class="best_gifts__card_tag work">for work</p>
+              <p class="best_gifts__card_text">console.log guru</p>
             </div>
-        </section>
-        <section class="about">
-            <div class="about__content">
-                <div class="about__text">
-                    <p class="about__subtitle">About</p>
-                    <h2 class="about__title">Unleash your inner superhero!</h2>
-                    <p class="about__text_content">This New Year marks the beginning of your journey to inner
-                    harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
-                </div>
-                <div class="about__img">
-                    <img  class="about__img" src="/public/images/santa.png">
-                </div>
+          </div>
+          <div class="best_gifts__card">
+            <img src="/public/images/gift-for-health.png" alt="gift2" />
+            <div class="best_gifts__card_info">
+              <p class="best_gifts__card_tag health">for health</p>
+              <p class="best_gifts__card_text">hydration bot</p>
             </div>
-        </section>
-        <section class="slider">
-            <div class="slider__text_content">
-                <p class="slider__subtitle">Become Happier!</p>
-                <h2 class="slider__title">IN THE NEW 2025</h2>
+          </div>
+          <div class="best_gifts__card">
+            <img src="/public/images/gift-for-work.png" alt="gift3" />
+            <div class="best_gifts__card_info">
+              <p class="best_gifts__card_tag work">for work</p>
+              <p class="best_gifts__card_text">merge master</p>
             </div>
-            <div class="slider__content">
-                <div class="slider__item">
-                    <p class="slider__item_text">LIVE</p>
-                    <img src="/public/images/snowman.png" alt="gift1">
-                </div>
-                <div class="slider__item">
-                    <p class="slider__item_text">CREATE</p>
-                    <img src="/public/images/christmas-trees.png" alt="gift2">
-                </div>
-                <div class="slider__item">
-                    <p class="slider__item_text">LOVE</p>
-                    <img src="/public/images/christmas-tree-ball.png" alt="gift3">
-                </div>
+          </div>
+          <div class="best_gifts__card">
+            <img src="/public/images/gift-for-harmony.png" alt="gift4" />
+            <div class="best_gifts__card_info">
+              <p class="best_gifts__card_tag harmony">for harmony</p>
+              <p class="best_gifts__card_text">spontaneous coding master</p>
             </div>
-            <div class="slider__controls">
-                <button class="slider__controls_prev">←</button>
-                <button class="slider__controls_next">→</button>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="cta__content">
+          <h2 class="cta__title">
+            Ready to start your jorney to a better version of yourself?
+          </h2>
+          <button class="btn">explore magical gifts</button>
+          <p class="subtitle">The New Year is Coming Soon</p>
+          <div class="cta__timer">
+            <div class="timer__item">
+              <p class="timer__item_number">05</p>
+              <p class="timer__item_text">days</p>
             </div>
-        </section>
-        <section class="best_gifts">
-            <div class="best_gifts__content">
-                <p class="best_gifts__subtitle">Best Gifts</p>
-                <h2 class="best_gifts__title">ESPECIALITY FOR YOU</h2>
+            <div class="timer__item">
+              <p class="timer__item_number">12</p>
+              <p class="timer__item_text">hours</p>
             </div>
-            <div class="best_gifts__cards">
-                <div class="best_gifts__card">
-                    <img src="/public/images/gift-for-work.png" alt="gift1">
-                    <div class="best_gifts__card_info">
-                        <p class="best_gifts__card_tag work">for work</p>
-                        <p class="best_gifts__card_text">console.log guru</p>
-                    </div>
-
-                </div>
-                <div class="best_gifts__card">
-                    <img src="/public/images/gift-for-health.png" alt="gift2">
-                    <div class="best_gifts__card_info">
-                        <p class="best_gifts__card_tag health">for health</p>
-                        <p class="best_gifts__card_text">hydration bot</p>
-                    </div>
-                </div>
-                <div class="best_gifts__card">
-                    <img src="/public/images/gift-for-work.png" alt="gift3">
-                    <div class="best_gifts__card_info">
-                        <p class="best_gifts__card_tag work">for work</p>
-                        <p class="best_gifts__card_text">merge master</p>
-                    </div>
-                </div>
-                <div class="best_gifts__card">
-                    <img src="/public/images/gift-for-harmony.png" alt="gift4">
-                    <div class="best_gifts__card_info">
-                        <p class="best_gifts__card_tag harmony">for harmony</p>
-                        <p class="best_gifts__card_text">spontaneous coding master</p>
-                    </div>
-                </div>
+            <div class="timer__item">
+              <p class="timer__item_number">33</p>
+              <p class="timer__item_text">minutes</p>
             </div>
-        </section>
-        <section class="cta">CTA</section>
+            <div class="timer__item">
+              <p class="timer__item_number">55</p>
+              <p class="timer__item_text">seconds</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>Footer</footer>
-</body>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__contacts">
+          <div class="footer__contacts_item">
+            <img src="/public/images/telegram.svg" alt="telegram" />
+            <p>1234142</p>
+            <p>CALL US</p>
+          </div>
+          <div class="footer__contacts_item">2</div>
+          <div class="footer__contacts_item">3</div>
+        </div>
+        <div class="footer__info">
+          <p>some info</p>
+          <p>2025. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
