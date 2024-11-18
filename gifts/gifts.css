@@ -17,7 +17,6 @@
   gap: 10px;
   width: 426px;
   text-align: center;
-  display: none;
 }
 .tab {
   display: flex;
@@ -35,10 +34,10 @@
   text-transform: uppercase;
 }
 
-.tab__item.active {
-  background: rgba(255, 70, 70, 0.1);
+.active a {
+  background: rgba(255, 255, 0, 0.1);
 }
 
 .tab__item a:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
