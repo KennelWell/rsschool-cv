@@ -65,11 +65,11 @@
             <h2 class="slider__title">IN THE NEW 2025</h2>
           </div>
           <div class="slider__items">
-            <div class="slider__item">
+            <div class="slider__item active">
               <p class="slider__item_text">LIVE</p>
               <img src="./public/images/snowman.png" alt="gift1" >
             </div>
-            <div class="slider__item">
+            <div class="slider__item ">
               <p class="slider__item_text">CREATE</p>
               <img src="./public/images/christmas-trees.png" alt="gift2" >
             </div>
@@ -77,9 +77,13 @@
               <p class="slider__item_text">LOVE</p>
               <img src="./public/images/christmas-tree-ball.png" alt="gift3" >
             </div>
+            <div class="slider__item">
+              <p class="slider__item_text">DREAM</p>
+              <img src="./public/images/fairytale-house.png" alt="gift3" >
+            </div>
           </div>
           <div class="slider__controls">
-            <button class="slider__controls_prev">←</button>
+            <button class="slider__controls_prev" disabled>←</button>
             <button class="slider__controls_next">→</button>
           </div>
         </div>
@@ -132,14 +136,17 @@
               <p class="timer__item_number">05</p>
               <p class="timer__item_text">days</p>
             </div>
+            <span class="divider"></span>
             <div class="timer__item">
               <p class="timer__item_number">12</p>
               <p class="timer__item_text">hours</p>
             </div>
+            <span class="divider"></span>
             <div class="timer__item">
               <p class="timer__item_number">33</p>
               <p class="timer__item_text">minutes</p>
             </div>
+            <span class="divider"></span>
             <div class="timer__item">
               <p class="timer__item_number">55</p>
               <p class="timer__item_text">seconds</p>
@@ -201,5 +208,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js.js"></script>
   </body>
 </html>
