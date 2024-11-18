@@ -218,6 +218,7 @@ section {
   height: 368px;
   border-radius: 20px;
   overflow: hidden;
+  border: solid 1px;
 }
 
 .slider__text_content {
@@ -229,9 +230,11 @@ section {
 
 .slider__items {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  /* justify-content: space-between;
+  align-items: center;*/
+  gap: 20px; 
+  transition: all 0.5s ease-in-out;
+  width: 1900px;
 }
 .slider__item {
   display: flex;
@@ -273,6 +276,16 @@ section {
   color: white;
   cursor: pointer;
   font-weight: 600;
+}
+
+.slider__controls button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.slider__controls button:disabled:hover {
+  background: transparent;
+  color: white;
 }
 
 .slider__controls button:hover {
@@ -369,7 +382,7 @@ section {
 .cta {
   color: white;
   height: 668px;
-  background: url("/public/images/bg-forest.png") no-repeat;
+  background: url("./public/images/bg-forest.png") no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -428,6 +441,12 @@ section {
 .timer__item_text {
   margin: 0;
   font-size: 16px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*FOOTER SECTION*/
