@@ -1,128 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
-
 main {
   background: #ff4646;
   background-image: url("public/images/bg-snow.png");
   border-radius: 20px;
+  color: white;
 }
 
-section {
-  width: 1440px;
-  height: 300px;
-  margin: 0 auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
+
+/*HEADER SECTION*/
 
 header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  height: 68px;
   width: 1440px;
   margin: 0 auto;
-  align-items: center;
+  padding: 0 8px;
 }
 
-footer {
-  height: 496px;
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  width: 1276px;
+  margin: 0 auto;
+  padding: 0 12px;
+  align-items: center;
+  height: 64px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin: 0 100px;
-  gap: 10px;
+  width: 141px;
+  padding: 8px 11px;
+  gap: 8px;
+  text-decoration: none;
+  color: #181c29;
+}
+
+.logo__text {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .menu__items {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-right: 100px;
-}
-
-.menu__item {
   list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #181c29;
+  font-weight: 600;
+  font-size: 12px;
+  user-select: none;
 }
 
 .menu__item a {
+  display: block;
+  padding: 12px 22px;
   text-decoration: none;
-  color: black;
+  color: #181c29;
+  border-radius: 10px;
+}
+
+.menu__item a:hover {
+  background: rgba(255, 70, 70, 0.1);
+  color: #ff4646;
+  transition: all 0.5s ease-in-out
+}
+
+
+/*MAIN SECTION*/
+
+section {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .hero {
   background: url("public/images/bg-ball.png") no-repeat center;
-  background-size: contain;
-  background-position: top;
-  height: 668px;
+  background-size: cover;
+  height: 524px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
+  width: 435px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 433px;
-  height: 404px;
-  color: white;
-}
-
-.title {
+  gap: 8px;
   text-align: center;
-  font-size: 32px;
-  line-height: 48px;
-  font-weight: 600;
-  letter-spacing: 6px;
-  margin-top: 10px;
-  margin-bottom: 7px;
 }
 
 .subtitle {
   font-family: "Allura", sans-serif;
   font-size: 24px;
-  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.075em;
 }
 
-.btn {
-  padding: 20px 32px;
-  background: #181c29;
-  border-radius: 20px;
-  color: white;
-  text-align: center;
-  line-height: 24px;
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
 }
 
-.cta {
-  background: url("public/images/bg-forest.png") repeat-x center;
-  background-size: cover;
-  background-position: bottom;
-  height: 668px;
+.btn {
+  display: block;
+  padding: 22px 32px;
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #181c29;
+  border-radius: 20px;
+  width: 173px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
+.btn:hover {
+  background-color: white;
+  color: #181c29;
+  transition: all 0.5s ease;
+}
+
+/*ABOUT SECTION */
+
 .about {
-  height: 628px;
+  height: 648px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__content {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1440px;
-  align-items: center;
-  background: white;
-  margin-top: 20px;
+  background-color: white;
   border-radius: 20px;
+  width: 1276px;
+  align-items: center;
+  justify-content: space-between;
+  height: 528px;
 }
 
 .about__text {
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 428px;
+  /* padding: 0 60px; */
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 60px;
 }
 
 .about__text_content {
@@ -141,48 +189,49 @@ footer {
   font-family: "Allura", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  margin: 10px 0;
   color: red;
 }
 
 .about__title {
   font-weight: 600;
   font-size: 24px;
-  margin: 0;
   line-height: 36.5px;
   color: #181c29;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
+/*SLIDER SECTION*/
+
 .slider {
-  height: 488px;
-  color: white;
-  text-align: center;
-  width: 1276px;
-  overflow: hidden;
-}
-.slider__subtitle {
-  font-family: "Allura", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-.slider__title {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 36.5px;
-  letter-spacing: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
 }
 
 .slider__content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 1440px;
-  align-items: center;
-  margin-top: 20px;
+  width: 1276px;
+  height: 368px;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.slider__text_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 .slider__item {
   display: flex;
@@ -190,121 +239,163 @@ footer {
   gap: 20px;
 }
 
-.slider__item_text {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0;
-  font-size: 80px;
-}
-
 .slider__item img {
   height: 200px;
   border-radius: 20px;
 }
 
+.slider__item_text {
+  font-size: 24px;
+  font-weight: 600;
+  font-size: 80px;
+}
+.slider__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 36.5px;
+  letter-spacing: 4px;
+}
+
 .slider__controls {
-  float: right;
-  margin: 30px 0;
+  height: 56px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .slider__controls button {
   background: transparent;
   border-radius: 20px;
-  height: 56px;
   width: 56px;
+  font-size: 24px;
   border: 1px solid white;
   color: white;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0 10px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .slider__controls button:hover {
   background: white;
-  color: black;
+  color: #ff4646;
+  transition: all 0.5s ease
 }
 
-.best_gifts {
-  text-align: center;
-  color: white;
-  height: 554px;
+/* BEST GIFTS SECTION*/
+
+.gifts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  gap: 20px;
 }
 
-.best_gifts__title {
+.gifts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.gifts__title {
   font-size: 24px;
   font-weight: 600;
-  margin: 0;
-  line-height: 36.5px;
-  letter-spacing: 9px;
+  letter-spacing: 3px;
 }
-
-.best_gifts__subtitle {
-  font-family: "Allura", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-.best_gifts__cards {
+.gifts__cards {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 12px;
   width: 1276px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.best_gifts__card {
+.gifts__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   background-color: white;
   border-radius: 20px;
-  overflow: hidden;
+  height: 342px;
+  cursor: pointer;
 }
 
-.best_gifts__card img {
-  height: 230px;
-  background-color: #ecf3f8;
-  margin: 0;
-}
-
-.best_gifts__card_info {
-  text-align: left;
-  font-size: 12px;
-  width: 260px;
-  text-transform: uppercase;
-}
-
-.best_gifts__card_text {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #181c29;
-}
-
-/* color tag*/
-
-.work {
-  color: #4361ff;
-}
-
-.health {
+.gifts__card:hover .gifts__card_text {
+  transition: all 0.5s ease;
   color: #ff4646;
 }
 
+.gifts__card img {
+  height: 230px;
+  background-color: #ecf3f8;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.gifts__card_info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  gap: 10px;
+  width: 270px;
+  padding: 13px 8px;
+}
+
+.gifts__card_text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.075em;
+  color: #181c29;
+  overflow-wrap:break-word;
+}
+
+.work {
+  color: #4361FF;
+}
+
+.health {
+  color: #06A44F;
+}
+
 .harmony {
-  color: #ffb800;
+  color: #FF43F7;
 }
 
 .cta {
   color: white;
+  height: 668px;
+  background: url("/public/images/bg-forest.png") no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__container {
+  padding: 60px 0;
 }
 
 .cta__content {
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 426px;
+  gap: 10px;
+}
+
+.cta__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 37.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .cta__timer {
@@ -339,36 +430,16 @@ footer {
   font-size: 16px;
 }
 
-.cta__title {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 36.5px;
-  letter-spacing: 9px;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  font-family: "Allura", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-/* .timer__item_number::before {
-  display: inline-block;
-  content: "";
-  width: 1px;
-  height: 40px;
-  margin-right: 5px;
-  background: black;
-} */
+/*FOOTER SECTION*/
 
 .footer__content {
   margin: auto;
   text-align: center;
   width: 1276px;
   padding: 60px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .footer__contacts {
@@ -386,4 +457,38 @@ footer {
   align-items: center;
   width: 417px;
   height: 204px;
+  text-decoration: none;
+  color: #181c29;
+  text-transform: uppercase;
+}
+
+.footer__contacts_img {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__contacts_number {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37.5px;
+  letter-spacing: 0.15em;
+  color: #181c29;
+  margin: 10px 0;
+}
+
+.footer__contacts_text {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.school_link {
+  text-decoration: none;
+  color: #181c29;
 }
