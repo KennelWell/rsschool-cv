@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.gifts {
+  background: url("/public/images/bg-garland.png") no-repeat;
+  background-size: contain;
+}
+
+.gifts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 426px;
+  text-align: center;
+}
+.tab {
+  display: flex;
+  list-style-type: none;
+}
+
+.tab__item a {
+  display: block;
+  padding: 12px 22px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.active a {
+  background: rgba(255, 255, 0, 0.1);
+}
+
+.tab__item a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
